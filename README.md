@@ -21,7 +21,7 @@ This perl module takes a GFF file as input and returns a multidimensional hash i
 
 # OUTPUT
 
-The perl code (using a GENCODE GTF excerpt named "test.gtf" as input):
+This perl code (using a GENCODE GTF excerpt named "test.gtf" as input):
 
 `use Data::Dumper;`
 

@@ -43,7 +43,7 @@ This perl module takes a GFF file as input and returns a multidimensional hash i
 
 =head1 OUTPUT
 
-The perl code (using a GENCODE GTF excerpt named "test.gtf" as input):
+This perl code (using a GENCODE GTF excerpt named "test.gtf" as input):
 
 C<< use Data::Dumper; >>
 
@@ -135,7 +135,6 @@ sub gffToHash{
 	}
 	open GFF, "$_[0]" or die $!;
 	my %gff=();
-#	my %existsElementId=(); #to check if ElementId is really unique within the file
 	my $identifyingElementId=$_[1]; # key used to uniquely identify gff records (e.g. exon_id or transcript_id attribute).
 	while (<GFF>){
 		next if ($_=~/^#/);
@@ -153,10 +152,6 @@ sub gffToHash{
 		my $elementId=undef;
 		if($line=~/$identifyingElementId (\S+)/){
 			$elementId=$1;
-#			if(exists $existsElementId{$elementId}){
-#				warn "$identifyingElementId '$elementId' is not unique within the file. Only its last occurrence will be returned.\n";
-#			}
-#			$existsElementId{$elementId}=1;
 		}
 		else{
 			warn "Line $. skipped (contains no '$identifyingElementId' attribute.\n";
@@ -165,14 +160,12 @@ sub gffToHash{
 		my @attrs=split(" ", pop(@line));
 		die "Odd number of subfields in 9th field of line $.. Dying.\n" unless ($#attrs%2==1);
 		push (@{$gff{$elementId}}, \@line);
-		#@{$gff{$elementId}}=@line;
 		for (my $i=0; $i<=$#attrs;$i=$i+2){
 			${${$gff{$elementId}}[$#{$gff{$elementId}}]}[8]{$attrs[$i]}=$attrs[$i+1];
 		}
 		if($keepWholeRecordInLastArrayElement ==1){
 			push (@{$gff{$elementId}[$#{$gff{$elementId}}]}, $untouchedLine);
 		}
-		#print Dumper \%gff;
 	}
 	close GFF;
 	return %gff;
