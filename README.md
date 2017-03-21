@@ -32,60 +32,115 @@ The perl code (using a GENCODE GTF excerpt named "test.gtf" as input):
 will produce the following output:
 
 `$VAR1 = {`
+
 `'ENSTR0000509780.2' => [`
+
 `[`
+
 `'chrY',`
+
 `'HAVANA',`
+
 `'exon',`
+
 `'1627746',`
+
 `'1628033',`
+
 `'.',`
+
 `'+',`
+
 `'.',`
+
 `{`
+
 `'gene_id' => 'ENSGR0000196433.8',`
+
 `'transcript_type' => 'processed_transcript',`
+
 `'transcript_name' => 'ASMT-005',`
+
 `'gene_status' => 'KNOWN',`
+
 `'gene_type' => 'protein_coding',`
+
 `'exon_number' => '1',`
+
 `'level' => '2',`
+
 `'havana_transcript' => 'OTTHUMT00000471622.1',`
+
 `'havana_gene' => 'OTTHUMG00000021065.2',`
+
 `'tag' => 'PAR',`
+
 `'exon_id' => 'ENSE00002031459.1',`
+
 `'transcript_status' => 'KNOWN',`
+
 `'transcript_id' => 'ENSTR0000509780.2',`
+
 `'gene_name' => 'ASMT'`
+
 `}`
+
 `],`
+
 `[`
+
 `'chrY',`
+
 `'HAVANA',`
+
 `'exon',`
+
 `'1636242',`
+
 `'1636463',`
+
 `'.',`
+
 `'+',`
+
 `'.',`
+
 `{`
+
 `'gene_id' => 'ENSGR0000196433.8',`
+
 `'transcript_type' => 'processed_transcript',`
+
 `'transcript_name' => 'ASMT-005',`
+
 `'gene_status' => 'KNOWN',`
+
 `'gene_type' => 'protein_coding',`
+
 `'exon_number' => '2',`
+
 `'level' => '2',`
+
 `'havana_transcript' => 'OTTHUMT00000471622.1',`
+
 `'havana_gene' => 'OTTHUMG00000021065.2',`
+
 `'tag' => 'PAR',`
+
 `'exon_id' => 'ENSE00002022546.1',`
+
 `'transcript_status' => 'KNOWN',`
+
 `'transcript_id' => 'ENSTR0000509780.2',`
+
 `'gene_name' => 'ASMT'`
+
 `}`
+
 `]`
+
 `]`
+
 `};`
 
 # DEPENDENCIES
