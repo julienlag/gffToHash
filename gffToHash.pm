@@ -53,117 +53,62 @@ C<< print Dumper \%gffHash; >>
 
 will produce the following output:
 
-C<< $VAR1 = { >>
-
-C<<           'ENSTR0000509780.2' => [ >>
-
-C<<                                    [ >>
-
-C<<                                      'chrY', >>
-
-C<<                                      'HAVANA', >>
-
-C<<                                      'exon', >>
-
-C<<                                      '1627746', >>
-
-C<<                                      '1628033', >>
-
-C<<                                      '.', >>
-
-C<<                                      '+', >>
-
-C<<                                      '.', >>
-
-C<<                                      { >>
-
-C<<                                        'gene_id' => 'ENSGR0000196433.8', >>
-
-C<<                                        'transcript_type' => 'processed_transcript', >>
-
-C<<                                        'transcript_name' => 'ASMT-005', >>
-
-C<<                                        'gene_status' => 'KNOWN', >>
-
-C<<                                        'gene_type' => 'protein_coding', >>
-
-C<<                                        'exon_number' => '1', >>
-
-C<<                                        'level' => '2', >>
-
-C<<                                        'havana_transcript' => 'OTTHUMT00000471622.1', >>
-
-C<<                                        'havana_gene' => 'OTTHUMG00000021065.2', >>
-
-C<<                                        'tag' => 'PAR', >>
-
-C<<                                        'exon_id' => 'ENSE00002031459.1', >>
-
-C<<                                        'transcript_status' => 'KNOWN', >>
-
-C<<                                        'transcript_id' => 'ENSTR0000509780.2', >>
-
-C<<                                        'gene_name' => 'ASMT' >>
-
-C<<                                      } >>
-
-C<<                                    ], >>
-
-C<<                                    [ >>
-
-C<<                                      'chrY', >>
-
-C<<                                      'HAVANA', >>
-
-C<<                                      'exon', >>
-
-C<<                                      '1636242', >>
-
-C<<                                      '1636463', >>
-
-C<<                                      '.', >>
-
-C<<                                      '+', >>
-
-C<<                                      '.', >>
-
-C<<                                      { >>
-
-C<<                                        'gene_id' => 'ENSGR0000196433.8', >>
-
-C<<                                        'transcript_type' => 'processed_transcript', >>
-
-C<<                                        'transcript_name' => 'ASMT-005', >>
-
-C<<                                        'gene_status' => 'KNOWN', >>
-
-C<<                                        'gene_type' => 'protein_coding', >>
-
-C<<                                        'exon_number' => '2', >>
-
-C<<                                        'level' => '2', >>
-
-C<<                                        'havana_transcript' => 'OTTHUMT00000471622.1', >>
-
-C<<                                        'havana_gene' => 'OTTHUMG00000021065.2', >>
-
-C<<                                        'tag' => 'PAR', >>
-
-C<<                                        'exon_id' => 'ENSE00002022546.1', >>
-
-C<<                                        'transcript_status' => 'KNOWN', >>
-
-C<<                                        'transcript_id' => 'ENSTR0000509780.2', >>
-
-C<<                                        'gene_name' => 'ASMT' >>
-
-C<<                                      } >>
-
-C<<                                    ] >>
-
-C<<                                  ] >>
-
-C<<         }; >>
+	$VAR1 = {
+          'ENSTR0000509780.2' => [
+                                   [
+                                     'chrY',
+                                     'HAVANA',
+                                     'exon',
+                                     '1627746',
+                                     '1628033',
+                                     '.',
+                                     '+',
+                                     '.',
+                                     {
+                                       'gene_id' => 'ENSGR0000196433.8',
+                                       'transcript_type' => 'processed_transcript',
+                                       'transcript_name' => 'ASMT-005',
+                                       'gene_status' => 'KNOWN',
+                                       'gene_type' => 'protein_coding',
+                                       'exon_number' => '1',
+                                       'level' => '2',
+                                       'havana_transcript' => 'OTTHUMT00000471622.1',
+                                       'havana_gene' => 'OTTHUMG00000021065.2',
+                                       'tag' => 'PAR',
+                                       'exon_id' => 'ENSE00002031459.1',
+                                       'transcript_status' => 'KNOWN',
+                                       'transcript_id' => 'ENSTR0000509780.2',
+                                       'gene_name' => 'ASMT'
+                                     }
+                                   ],
+                                   [
+                                     'chrY',
+                                     'HAVANA',
+                                     'exon',
+                                     '1636242',
+                                     '1636463',
+                                     '.',
+                                     '+',
+                                     '.',
+                                     {
+                                       'gene_id' => 'ENSGR0000196433.8',
+                                       'transcript_type' => 'processed_transcript',
+                                       'transcript_name' => 'ASMT-005',
+                                       'gene_status' => 'KNOWN',
+                                       'gene_type' => 'protein_coding',
+                                       'exon_number' => '2',
+                                       'level' => '2',
+                                       'havana_transcript' => 'OTTHUMT00000471622.1',
+                                       'havana_gene' => 'OTTHUMG00000021065.2',
+                                       'tag' => 'PAR',
+                                       'exon_id' => 'ENSE00002022546.1',
+                                       'transcript_status' => 'KNOWN',
+                                       'transcript_id' => 'ENSTR0000509780.2',
+                                       'gene_name' => 'ASMT'
+                                     }
+                                   ]
+                                 ]
+        };
 
 =head1 DEPENDENCIES
 
